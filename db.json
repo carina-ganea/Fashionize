@@ -24,20 +24,22 @@
       "lastName": "test2",
       "favourites": [
         {
-          "id": 2,
-          "name": "Trousers",
-          "image": "trousers.jpg",
-          "price": "139.99",
-          "colours": [
-            "grey",
-            "blue"
-          ]
-        },
-        {
           "id": 1,
           "name": "Shoes",
           "image": "shoes.jpg",
           "price": "89.99",
+          "type": "Shoes",
+          "colours": [
+            "black",
+            "white"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Trousers",
+          "image": "trousers.jpg",
+          "price": "139.99",
+          "type": "Trousers",
           "colours": [
             "grey"
           ]
@@ -45,133 +47,102 @@
       ],
       "orders": [
         {
-          "date": "Sun Jan 23 2022 13:10:28 GMT+0200 (Eastern European Standard Time)",
+          "date": "Sun Jan 23 2022 23:04:55 GMT+0200 (Eastern European Standard Time)",
+          "cart": [
+            {
+              "id": 2,
+              "name": "Trousers",
+              "image": "trousers.jpg",
+              "price": "139.99",
+              "type": "Trousers",
+              "colours": [
+                "grey"
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Shoes",
+              "image": "shoes.jpg",
+              "price": "89.99",
+              "type": "Shoes",
+              "colours": [
+                "black",
+                "white"
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Blaser",
+              "image": "blazer.jpg",
+              "price": "79.99",
+              "type": "Blasers",
+              "colours": [
+                "beige",
+                "grey"
+              ]
+            }
+          ]
+        },
+        {
+          "date": "Sun Jan 23 2022 23:11:00 GMT+0200 (Eastern European Standard Time)",
+          "cart": [
+            {
+              "id": 2,
+              "name": "Trousers",
+              "image": "trousers.jpg",
+              "price": "139.99",
+              "type": "Trousers",
+              "colours": [
+                "grey"
+              ]
+            },
+            {
+              "id": 4,
+              "name": "GANT Men's Shirt",
+              "price": "309.99",
+              "image": "shirt.jpg",
+              "type": "Shirts",
+              "colours": [
+                "blue"
+              ]
+            }
+          ]
+        },
+        {
+          "date": "Sun Jan 23 2022 23:16:53 GMT+0200 (Eastern European Standard Time)",
           "cart": [
             {
               "id": 3,
-              "name": "Blazer",
+              "name": "Blaser",
               "image": "blazer.jpg",
               "price": "79.99",
+              "type": "Blasers",
               "colours": [
-                "yellow",
-                "blue"
+                "beige",
+                "grey"
               ]
             },
             {
-              "id": 1,
-              "name": "Shoes",
-              "image": "shoes.jpg",
-              "price": "89.99",
+              "id": 4,
+              "name": "GANT Men's Shirt",
+              "price": "309.99",
+              "image": "shirt.jpg",
+              "type": "Shirts",
               "colours": [
-                "grey"
+                "blue"
               ]
             }
           ]
         },
         {
-          "date": "Sun Jan 23 2022 13:12:35 GMT+0200 (Eastern European Standard Time)",
-          "cart": [
-            {
-              "id": 3,
-              "name": "Blazer",
-              "image": "blazer.jpg",
-              "price": "79.99",
-              "colours": [
-                "yellow",
-                "blue"
-              ]
-            },
-            {
-              "id": 1,
-              "name": "Shoes",
-              "image": "shoes.jpg",
-              "price": "89.99",
-              "colours": [
-                "grey"
-              ]
-            }
-          ]
-        },
-        {
-          "date": "Sun Jan 23 2022 13:13:32 GMT+0200 (Eastern European Standard Time)",
+          "date": "Sun Jan 23 2022 23:18:12 GMT+0200 (Eastern European Standard Time)",
           "cart": [
             {
               "id": 2,
               "name": "Trousers",
               "image": "trousers.jpg",
               "price": "139.99",
-              "colours": [
-                "grey",
-                "blue"
-              ]
-            },
-            {
-              "id": 1,
-              "name": "Shoes",
-              "image": "shoes.jpg",
-              "price": "89.99",
-              "colours": [
-                "grey"
-              ]
-            }
-          ]
-        },
-        {
-          "date": "Sun Jan 23 2022 13:16:15 GMT+0200 (Eastern European Standard Time)",
-          "cart": [
-            {
-              "id": 2,
-              "name": "Trousers",
-              "image": "trousers.jpg",
-              "price": "139.99",
-              "colours": [
-                "grey",
-                "blue"
-              ]
-            },
-            {
-              "id": 1,
-              "name": "Shoes",
-              "image": "shoes.jpg",
-              "price": "89.99",
-              "colours": [
-                "grey"
-              ]
-            }
-          ]
-        },
-        {
-          "date": "Sun Jan 23 2022 13:16:42 GMT+0200 (Eastern European Standard Time)",
-          "cart": [
-            {
-              "id": 2,
-              "name": "Trousers",
-              "image": "trousers.jpg",
-              "price": "139.99",
-              "colours": [
-                "grey",
-                "blue"
-              ]
-            },
-            {
-              "id": 1,
-              "name": "Shoes",
-              "image": "shoes.jpg",
-              "price": "89.99",
-              "colours": [
-                "grey"
-              ]
-            }
-          ]
-        },
-        {
-          "date": "Sun Jan 23 2022 13:18:51 GMT+0200 (Eastern European Standard Time)",
-          "cart": [
-            {
-              "id": 1,
-              "name": "Shoes",
-              "image": "shoes.jpg",
-              "price": "89.99",
+              "type": "Trousers",
               "colours": [
                 "grey"
               ]
@@ -217,7 +188,7 @@
       "name": "Blaser",
       "image": "blazer.jpg",
       "price": "79.99",
-      "type" : "Blasers",
+      "type": "Blasers",
       "colours": [
         "beige",
         "grey"

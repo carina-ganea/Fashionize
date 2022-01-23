@@ -21,7 +21,13 @@ export const userSlice = createSlice({
       state.cart.push(action.payload)
     },
     removeFromCart: (state, action) => {
-      state.cart.pop(action.payload)
+      for( var i = 0; i <= state.cart.length; i++){
+        if( state.cart[i].id === action.payload.id){
+          state.cart[i] = state.cart[state.cart.length-1];
+          state.cart.pop();
+          break;
+        }
+      }
     }
   }
 })

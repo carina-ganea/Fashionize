@@ -26,7 +26,7 @@ const MenuContainer: React.FC = () => {
 
                     <div className="list-group-item list-group-item" style={{ height: '100%' }}></div>
                     <button className="list-group-item list-group-item-action" onClick={() => {
-                        localStorage.clear();
+                        sessionStorage.clear();
                         window.location.href = '/';
                         window.location.reload();
                     }}>
@@ -63,6 +63,3 @@ const MenuContainer: React.FC = () => {
 
 export default MenuContainer;
 
-function logout() {
-    throw new Error('Function not implemented.');
-}
