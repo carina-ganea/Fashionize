@@ -1,0 +1,80 @@
+.divider {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+    background-color: #D5EAF5;
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.1em 1.0em rgb(0 0 0 / 10%);
+  }
+
+.menu {
+  height: 100vh; 
+  position: fixed; 
+  left: 0;
+}
+
+.menu a, .menu button {
+  text-align: center !important;
+  padding-bottom: 3vh !important;
+  padding-top: 3vh !important;
+  color: blue !important;
+}
+
+.filter {
+  background-color: #FFFFFF;
+  padding: 1vh;
+  margin-top: 4vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+}
+
+.product {
+  background-color: #FFFFFF;
+  width: 18vw;
+  height: 50vh;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+}
+
+.cartItem {
+  background-color: #FFFFFF;
+  width: 90%;
+  height: 30vh;
+  padding: 20px 50px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.orderItem {
+  background-color: #FFFFFF;
+  width: 90%;
+  height: 12vh;
+  padding: 20px 50px;
+  margin: 20px;
+}
+
+.favourite {
+  background-color: #FFFFFF;
+  /* height: 10vh; */
+   padding: 20px 100px 50px;
+  /*margin: 20px; */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.favourite img {
+  height: 30vw;
+}
+
+.carousel div ol li{
+  background-color: red;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
