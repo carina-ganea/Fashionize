@@ -1,13 +1,10 @@
-import { useSelector, useDispatch } from "react-redux";
-import { productSelector } from "../store/product.slice";
+import { useSelector } from "react-redux";
 import { userSelector } from "../store/user.slice";
-import { Link } from "react-router-dom";
 import { Key, useEffect, useState } from "react";
 import { API_URL } from "../utils/constants";
 import OrderItem from "../components/orderItem";
 
 const Orders = () => {
-    //const cart = useSelector(userCartSelector);
     const profile = useSelector(userSelector);
     
     const [orders, setOrders] = useState<any[]>([]);
@@ -15,19 +12,11 @@ const Orders = () => {
     const getOrders = async() => {
         const data = await fetch(`${API_URL}/users?id=${profile.id}`).then( res => res.json());
         setOrders(data[0]['orders']);
-        //console.log(aux);
     };
 
     useEffect (() => {
         getOrders();
     }, []);
-    //console.log(cart);
-    
-        // return (
-        //     <div className="alert alert-primary" role="alert"> 
-        //         You have not placed any orders yet.
-        //     </div>
-        // )
     
     return (
         

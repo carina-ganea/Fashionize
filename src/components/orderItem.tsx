@@ -1,13 +1,10 @@
 import React from 'react';
 import '../components/styleComponents.css';
 import { useDispatch } from 'react-redux';
-import { removeFromCart } from '../store/user.slice';
 
 
 const OrderItem : React.FC <{ 
     product: any;
-    // liked?: boolean;
-    // onClick?: ()=> void ;
 }> = ({product}) => {
         const dispatch = useDispatch();
     return (

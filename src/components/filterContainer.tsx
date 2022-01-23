@@ -1,13 +1,12 @@
-import React, { useContext } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { useDispatch } from 'react-redux';
 import '../components/styleComponents.css';
-import { productColourSelector, setColours, setType } from '../store/product.slice';
+import {  setColours, setType } from '../store/product.slice';
 
 
 
 const FilterContainer: React.FC = ({ children }) => {
     const dispatch = useDispatch()
-    //const [colours, setColours] = useSelector(productColourSelector);
 
     const selectedColour = (colour: string) => {
         dispatch(setColours(colour));

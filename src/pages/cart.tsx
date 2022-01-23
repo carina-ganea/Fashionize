@@ -23,7 +23,6 @@ const Cart = () => {
             <div className="container">
                 { cart.map((product: { id: Key | null | undefined; }) => (
                         <CartItem key={product.id} product={product}></CartItem>
-                        //dispatch(updateProduct(product));
                     )) }
                 
             </div>

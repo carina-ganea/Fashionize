@@ -1,21 +1,13 @@
-import { useSelector, useDispatch } from "react-redux";
-//import { gamesSelector, averageMovesSelector, updateFromApi } from "../store/product.slice";
+import { useSelector } from "react-redux";
 import { userSelector } from "../store/user.slice";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { API_URL } from "../utils/constants";
-import CartItem from "../components/cartItem";
-import Product from "../components/product";
 import { Key } from "react";
-import { stringify } from "querystring";
 import FavouriteItem from "../components/favouriteItem";
 import { Carousel } from "react-bootstrap";
 
 const Profile = () => {
-    //const numberOfGames = useSelector(gamesSelector);
-    //const averageMoves = useSelector(averageMovesSelector);
     const profile = useSelector(userSelector);
-    const dispatch = useDispatch();
     const [favourites, setFavourites] = useState<any[]>([]);
     const [user, setUser] = useState<any[]>([]);
 
@@ -81,7 +73,6 @@ const Profile = () => {
                             Favourite items:
                         </div>
                         <div className="col-9">
-                            {/* <ul className="list-group"> */}
                             <Carousel variant="dark" style={{ textAlign: "center"}}>
                                     {favourites.map((product: { id: Key | null | undefined; }) => {
                                         
@@ -90,7 +81,6 @@ const Profile = () => {
                                                 </Carousel.Item>;  
                                 })}
                             </Carousel>
-                            {/* </ul> */}
                         </div>
                     </div>
                 </li>

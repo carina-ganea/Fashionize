@@ -6,8 +6,6 @@ import { removeFromCart } from '../store/user.slice';
 
 const CartItem : React.FC <{ 
     product: any;
-    // liked?: boolean;
-    // onClick?: ()=> void ;
 }> = ({product}) => {
         const dispatch = useDispatch();
     return (
