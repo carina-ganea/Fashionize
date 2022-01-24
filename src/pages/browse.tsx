@@ -25,9 +25,11 @@ const Browse = () => {
     useEffect (() => {
         console.log(stock);
         setProducts(stock.filter(p => {
-            var res = product.type === p.type || product.type === "";
+            var res = (product.type === p.type) || (product.type === "");
+            console.log(product.type === p.type);
             for( var i = 0; i < product.colours.length; i++){
-                res = res && p.colours.includes(product.colours[i]);
+                if( product.colours[i] !== "")
+                    res = res && p.colours.includes(product.colours[i]);
             }
             return res; 
             })

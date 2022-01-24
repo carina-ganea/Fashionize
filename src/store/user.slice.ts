@@ -7,6 +7,7 @@ export const userSlice = createSlice({
     email: '',
     firstName: '',
     lastName: '',
+    address: '',
     id: window.sessionStorage.getItem("id"),
     cart: <any>[]
   },
@@ -16,6 +17,7 @@ export const userSlice = createSlice({
         state.firstName = action.payload.firstName || state.firstName;
         state.lastName = action.payload.lastName || state.lastName;
         state.id = action.payload.id || state.id;
+        state.address = action.payload.address || state.address;
     },
     addToCart: ( state, action ) => {
       state.cart.push(action.payload)

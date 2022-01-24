@@ -10,7 +10,7 @@ export const productSlice = createSlice({
     description:"nimic",
     price: null,
     liked: false,
-    colours : [null,],
+    colours : [""],
     type : ""
   },
   reducers: {
@@ -33,7 +33,7 @@ export const productSlice = createSlice({
           return;
         }
       }
-      if( state.colours[0] == null){
+      if( state.colours[0] == ""){
         state.colours[0] = action.payload;
       } else {
         state.colours.push(action.payload);

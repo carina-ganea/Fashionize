@@ -53,8 +53,11 @@ const MenuContainer: React.FC = () => {
                         <i className="fas fa-user fa-2x"></i></Link>
 
                     <div className="list-group-item list-group-item" style={{ height: '100%' }}></div>
+
                     <Link to="/login" className="list-group-item list-group-item-action">
                         <i className="fas fa-sign-in-alt fa-2x"></i></Link>
+                    <Link to="/register" className="list-group-item list-group-item-action">
+                        <i className="fas fa-user-plus fa-2x"></i></Link>
 
                 </div>
             </div>

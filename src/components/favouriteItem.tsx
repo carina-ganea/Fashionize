@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { userSelector } from "../store/user.slice";
 import { addToCart } from '../store/user.slice';
 import { API_URL } from '../utils/constants';
+import { Modal } from 'react-bootstrap';
 
 
 const FavouriteItem: React.FC<{
@@ -15,6 +16,10 @@ const FavouriteItem: React.FC<{
     const [favourites, setFavourites] = useState<any[]>([]);
     const [favs, setFavs] = useState<any[]>([]);
     const navigate = useNavigate();
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     useEffect(() => {
         fetch(`${API_URL}/users?id=${profile.id}`).then(res => res.json()).then((data) => {
@@ -23,9 +28,16 @@ const FavouriteItem: React.FC<{
         });
     }, [profile.id, dispatch]);
     return (
+        <>
+        <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Item has been added to the shopping cart.</Modal.Title>
+                </Modal.Header>
+
+            </Modal>
         <div className="favourite row align-items-start">
             
-            <div className="col-12" style={{ textAlign: 'right' }}><a className="fas fa-heart fa-lg" style={{ textDecoration: 'none' }} onClick={async () => {
+            <div className="col-12" style={{ textAlign: 'right', margin: '10px' }}><a className="fas fa-heart fa-lg" style={{ textDecoration: 'none' }} onClick={async () => {
                 await fetch(`${API_URL}/users?id=${profile.id}`).then(res => res.json()).then(async (data) => {
                     setFavs([]);
 
@@ -58,10 +70,11 @@ const FavouriteItem: React.FC<{
                 <img src={`assets/${product.image}`}/>
                 <h5>{product.name}</h5>
                 <h6>{Number(product.price)} RON</h6>
-                <button className="btn btn-primary" onClick={() => dispatch(addToCart(product))}>Add to cart</button>
+                <button className="btn btn-primary" onClick={() => {dispatch(addToCart(product)); handleShow();}}>Add to cart</button>
             </div>
             
         </div>
+        </>
     )
 }
 

@@ -10,6 +10,7 @@ import Browse from './pages/browse';
 import Profile from './pages/profile';
 import Orders from './pages/orders';
 import Cart from './pages/cart';
+import Register from './pages/register';
 
 import PageContainer from './components/pageContainer';
 import PrivateRoute from './components/privateRoute';
@@ -20,6 +21,7 @@ import store from './store';
 import MenuContainer from './components/menuContainer';
 import ContentContainer from './components/contentContainer';
 import FilterContainer from './components/filterContainer';
+
 
 export default function App() {
   const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'> ('light');
@@ -46,6 +48,14 @@ export default function App() {
                 <MenuContainer />
                 <ContentContainer>
                   <Auth />
+                </ContentContainer>  
+              </PageContainer>}
+            />
+            <Route path="/register" element={
+              <PageContainer>
+                <MenuContainer />
+                <ContentContainer>
+                  <Register />
                 </ContentContainer>  
               </PageContainer>}
             />

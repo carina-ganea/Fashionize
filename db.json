@@ -20,9 +20,19 @@
       "id": 2,
       "email": "test@gmail.com",
       "password": "test2",
-      "firstName": "test2",
-      "lastName": "test2",
+      "firstName": "Test2",
+      "lastName": "Test2",
       "favourites": [
+        {
+          "id": 2,
+          "name": "Trousers",
+          "image": "trousers.jpg",
+          "price": "139.99",
+          "type": "Trousers",
+          "colours": [
+            "grey"
+          ]
+        },
         {
           "id": 1,
           "name": "Shoes",
@@ -32,16 +42,6 @@
           "colours": [
             "black",
             "white"
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Trousers",
-          "image": "trousers.jpg",
-          "price": "139.99",
-          "type": "Trousers",
-          "colours": [
-            "grey"
           ]
         }
       ],
@@ -148,8 +148,35 @@
               ]
             }
           ]
+        },
+        {
+          "date": "Mon Jan 24 2022 15:56:55 GMT+0200 (Eastern European Standard Time)",
+          "cart": [
+            {
+              "id": 2,
+              "name": "Trousers",
+              "image": "trousers.jpg",
+              "price": "139.99",
+              "type": "Trousers",
+              "colours": [
+                "grey"
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Shoes",
+              "image": "shoes.jpg",
+              "price": "89.99",
+              "type": "Shoes",
+              "colours": [
+                "black",
+                "white"
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "address": "Test2 Nr 2"
     },
     {
       "id": 3,
@@ -159,6 +186,166 @@
       "lastName": "test3",
       "favourites": [],
       "orders": []
+    },
+    {
+      "email": "hello",
+      "password": "world",
+      "address": "Elena Caragiani 17",
+      "favourites": [
+        {
+          "id": 2,
+          "name": "Trousers",
+          "image": "trousers.jpg",
+          "price": "139.99",
+          "type": "Trousers",
+          "colours": [
+            "grey"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Blaser",
+          "image": "blazer.jpg",
+          "price": "79.99",
+          "type": "Blasers",
+          "colours": [
+            "beige",
+            "grey"
+          ]
+        }
+      ],
+      "orders": [],
+      "id": 4,
+      "firstName": "Carina-Eliza",
+      "lastName": "Ganea"
+    },
+    {
+      "email": "test5",
+      "password": "test5",
+      "firstname": "",
+      "lastname": "",
+      "address": "test5 test5 test5",
+      "favourites": [
+        {
+          "id": 1,
+          "name": "Shoes",
+          "image": "shoes.jpg",
+          "price": "89.99",
+          "type": "Shoes",
+          "colours": [
+            "black",
+            "white"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "GANT Men's Shirt",
+          "price": "309.99",
+          "image": "shirt.jpg",
+          "type": "Shirts",
+          "colours": [
+            "blue"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Trousers",
+          "image": "trousers.jpg",
+          "price": "139.99",
+          "type": "Trousers",
+          "colours": [
+            "grey"
+          ]
+        }
+      ],
+      "orders": [
+        {
+          "date": "Mon Jan 24 2022 15:58:08 GMT+0200 (Eastern European Standard Time)",
+          "cart": [
+            {
+              "id": 1,
+              "name": "Shoes",
+              "image": "shoes.jpg",
+              "price": "89.99",
+              "type": "Shoes",
+              "colours": [
+                "black",
+                "white"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Trousers",
+              "image": "trousers.jpg",
+              "price": "139.99",
+              "type": "Trousers",
+              "colours": [
+                "grey"
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Blaser",
+              "image": "blazer.jpg",
+              "price": "79.99",
+              "type": "Blasers",
+              "colours": [
+                "beige",
+                "grey"
+              ]
+            },
+            {
+              "id": 4,
+              "name": "GANT Men's Shirt",
+              "price": "309.99",
+              "image": "shirt.jpg",
+              "type": "Shirts",
+              "colours": [
+                "blue"
+              ]
+            }
+          ]
+        },
+        {
+          "date": "Mon Jan 24 2022 15:58:30 GMT+0200 (Eastern European Standard Time)",
+          "cart": [
+            {
+              "id": 2,
+              "name": "Trousers",
+              "image": "trousers.jpg",
+              "price": "139.99",
+              "type": "Trousers",
+              "colours": [
+                "grey"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Trousers",
+              "image": "trousers.jpg",
+              "price": "139.99",
+              "type": "Trousers",
+              "colours": [
+                "grey"
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Blaser",
+              "image": "blazer.jpg",
+              "price": "79.99",
+              "type": "Blasers",
+              "colours": [
+                "beige",
+                "grey"
+              ]
+            }
+          ]
+        }
+      ],
+      "id": 5,
+      "firstName": "test5",
+      "lastName": "test"
     }
   ],
   "products": [

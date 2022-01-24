@@ -45,7 +45,7 @@ const Auth = () => {
                         </div>
 
                         <div className="col-12">
-                            <button type="button" className="btn btn-primary" style={{backgroundColor: 'blue'}} onClick={handleLogin}>Sign In</button>
+                            <button type="button" className="btn btn-primary" style={{backgroundColor: 'blue'}} onClick={handleLogin}>Log In</button>
                         </div>
                     </form>
                 </div>
